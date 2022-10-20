@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: birds
+  description: Micropet Micro Service App
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - web
+    - tanzu
+    - micropets
+  annotations:
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/name=birds"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: the-pet-team
+  system: micropets
